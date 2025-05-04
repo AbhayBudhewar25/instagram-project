@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Login Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #f0eafa, #fff0f5, #fafafa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 80px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      height: 20%;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+      background: radial-gradient(circle at 30% 30%, #f58529, #dd2a7b, #8134af, #405de6);
+      border-radius: 20%;
+      position: relative;
+    }
+
+    .logo::after {
+      content: '';
+      position: absolute;
+      top: 18%;
+      left: 18%;
+      width: 65%;
+      height: 65%;
+      background: white;
+      border-radius: 50%;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-btn:hover {
+      background-color: #007ac1;
+    }
+
+    .link {
+      display: block;
+      margin-top: 15px;
+      color: #00376b;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: gray;
+    }
+
+    .create-account {
+      margin-top: 20px;
+      border: 1px solid #0095f6;
+      background-color: transparent;
+      color: #0095f6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="logo"></div>
+  <input type="text" placeholder="Username, email or mobile number">
+  <input type="password" placeholder="Password">
+  <button class="login-btn">Log in</button>
+  <a href="#" class="link">Forgot password?</a>
+  <button class="login-btn create-account">Create new account</button>
+  <div class="footer">Meta</div>
+</div>
+
+</body>
+</html>
